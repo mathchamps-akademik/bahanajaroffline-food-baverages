@@ -1,41 +1,31 @@
-# Mathpreneur F&B Online - Pertemuan 1
+# Math Champs F&B Teaching Kit Offline - GitHub Pages
 
-Folder ini adalah paket raw template-style untuk di-upload ke GitHub Pages. Mulai dari `index.html` sebagai hub utama.
+Paket ini adalah file raw siap upload untuk GitHub Pages. Materi dipakai untuk Holiday Program kelas offline/tatap muka, 3 pertemuan, masing-masing 100 menit. GitHub Pages hanya dipakai sebagai halaman akses online untuk guru.
 
-Update terbaru: logo Kalananti sudah dihilangkan dari template, dan teks pada spin wheel tetap terbaca normal setelah roda diputar.
+## Isi Paket
 
-## File Utama
-
-- `index.html` - hub utama guru.
-- `teacher-deck-day1-online.html` - deck guru versi HTML.
-- `math-champs-fnb-online-day1-teacher-deck.pdf` - PDF cadangan deck.
-- `spin-wheel-day1.html` - spin wheel bahan utama.
-- `pre-test-day1.html` - pre-test online siswa.
-- `post-test-day1.html` - post-test online siswa.
-- `results-spreadsheet-day1.html` - halaman hasil guru dan export CSV.
-- `answer-key-day1.html` - soal dan kunci jawaban guru.
-- `pre-test-day1-questions.pdf` - PDF soal pre-test.
-- `post-test-day1-questions.pdf` - PDF soal post-test.
+- `index.html` - hub utama semua pertemuan offline.
+- `decks/` - teacher deck HTML Pertemuan 1, 2, dan 3.
+- `pdf/decks/` - PDF cadangan deck Pertemuan 1, 2, dan 3.
+- `tests/` - PDF pre-test, post-test, dan kunci jawaban per pertemuan.
+- `tools/spin-wheel-day1.html` - spin wheel cadangan Pertemuan 1. Aktivitas utama tetap memakai kartu blind box yang diprint dan digunting dari learning kit.
+- `manifest.json` - daftar file penting untuk pengecekan cepat.
 
 ## Cara Upload ke GitHub Pages
 
 1. Buat repository baru di GitHub.
 2. Upload semua isi folder ini ke root repository, termasuk `index.html`.
 3. Buka `Settings > Pages`.
-4. Pilih `Deploy from a branch`, branch `main`, folder `/root`.
-5. Setelah aktif, hub utama akan bisa dibuka di `https://USERNAME.github.io/NAMA-REPO/`.
+4. Pada `Build and deployment`, pilih `Deploy from a branch`.
+5. Pilih branch `main` dan folder `/root`, lalu klik `Save`.
+6. Setelah deploy selesai, buka `https://USERNAME.github.io/NAMA-REPO/`.
 
-## Cara Edit Dropdown Guru
+## Catatan
 
-Buka file `pre-test-day1.html` dan `post-test-day1.html`, lalu cari bagian ini:
+Semua tombol di hub memakai link relatif, jadi tidak bergantung pada hosting sementara. Selama GitHub Pages repository aktif, hub dan file pendukungnya tetap bisa diakses.
 
-```js
-// EDIT DI SINI: ganti daftar nama guru sesuai kelas Holiday Program.
-const TEACHER_OPTIONS = ["Guru 1", "Guru 2", "Guru 3"];
-```
+Jangan upload paket ini ke host-html untuk versi final. Host-html menampilkan halaman di dalam iframe sandbox, sehingga Chrome bisa memblokir tombol yang membuka PDF, pre-test, post-test, atau kunci jawaban. GitHub Pages menyajikan file sebagai halaman normal, jadi link PDF/test akan terbuka seperti file biasa.
 
-Ganti daftar nama guru sesuai kebutuhan.
+Saat upload ke GitHub, upload isi folder ini ke root repository. Jangan hanya upload file zip-nya, karena GitHub Pages perlu membaca `index.html`, folder `pdf/`, folder `tests/`, folder `decks/`, dan folder `tools/` secara langsung.
 
-## Catatan Hasil Test
-
-Pre-test dan post-test tetap menyimpan hasil ke backend online yang sudah dibuat. GitHub Pages hanya menjadi tempat hosting file HTML, sementara hasil siswa tetap bisa dilihat dari halaman `results-spreadsheet-day1.html`.
+Sebelum kelas offline dimulai, guru tetap perlu menyiapkan print worksheet, pre-test, post-test, kartu blind box, dan perlengkapan kelas sesuai checklist di hub.

@@ -1,0 +1,31 @@
+{
+  "package": "Math Champs F&B Teaching Kit Offline - GitHub Pages Raw Files",
+  "entrypoint": "index.html",
+  "created_at": "2026-06-16",
+  "note": "Upload semua isi folder ini ke root repository GitHub Pages. Materi dipakai untuk kelas offline 3 pertemuan x 100 menit; GitHub Pages hanya menjadi akses online untuk guru. Semua link di hub memakai path relatif.",
+  "files": {
+    "hub": "index.html",
+    "day1DeckHtml": "decks/pertemuan-1-teacher-deck.html",
+    "day2DeckHtml": "decks/pertemuan-2-teacher-deck.html",
+    "day3DeckHtml": "decks/pertemuan-3-teacher-deck.html",
+    "spinWheelDay1Backup": "tools/spin-wheel-day1.html",
+    "day1DeckPdf": "pdf/decks/pertemuan-1-teacher-deck.pdf",
+    "day2DeckPdf": "pdf/decks/pertemuan-2-teacher-deck.pdf",
+    "day3DeckPdf": "pdf/decks/pertemuan-3-teacher-deck.pdf",
+    "day1Tests": [
+      "tests/day1/pre-test-1.pdf",
+      "tests/day1/post-test-1.pdf",
+      "tests/day1/kunci-jawaban-1.pdf"
+    ],
+    "day2Tests": [
+      "tests/day2/pre-test-2.pdf",
+      "tests/day2/post-test-2.pdf",
+      "tests/day2/kunci-jawaban-2.pdf"
+    ],
+    "day3Tests": [
+      "tests/day3/pre-test-3.pdf",
+      "tests/day3/post-test-3.pdf",
+      "tests/day3/kunci-jawaban-3.pdf"
+    ]
+  }
+}
